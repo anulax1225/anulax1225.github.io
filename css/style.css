@@ -1,0 +1,234 @@
+:root {
+    --max-width: 840px;
+    --font-title-1: 27px;
+    --font-title-2: 16px;
+    --font-title-3: 14px;
+    --img-width: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.document {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial;
+    width: var(--max-width);
+    box-shadow: 0px 5px 15px black;
+}
+.btn-out {
+    position: fixed;
+    top : 20px;
+    left: 89%;
+    padding: 13px;
+    background-color: rgba(5, 5, 255, 0.829);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+header {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    font-size: var(--font-title-1);
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.container h1:hover {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+}
+
+.content-info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-content {
+width: 50%;
+    font-size: var(--font-title-3);
+}
+.right-content {
+	width: 50%;
+	font-size: var(--font-title-3);
+
+}
+.lister li {
+    width: 40%;
+}
+
+.content-info .left-content {
+    width: 70%;
+}
+
+.content-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.content-list ul li {
+    font-size: var(--font-title-3);
+    width: 50%;
+}
+
+.left-content ul {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.left-content h2 {
+    font-size: var(--font-title-2);
+}
+
+.left-content p {
+    margin-top: 2px;
+}
+
+.right-content p {
+    margin-top: 2px;
+    text-align: right;
+}
+
+.hide-text {
+    color: white;
+}
+
+.resizer {
+    font-size: 20px;
+}
+
+.more-info {
+    display: flex;
+}
+
+.btn-more {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.btn-more:hover {
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.btn-more img {
+    width: var(--img-width);
+}
+
+.modal {
+    position: fixed;
+    flex-direction: column;
+    top: 30px;
+    bottom: 30px;
+    background-color: rgba(196, 196, 196, 0.651);
+    border-radius: 10px;
+    width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 0;
+    animation-name: modal-show;
+    animation-duration: 1s;
+}
+
+@keyframes modal-show {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: var(--max-width);
+    }
+}
+
+.modal .btn-cancel {
+    margin-bottom: 40px;
+    margin-right: 80px;
+    align-self: flex-end;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    border: none;
+}
+
+.head-container {
+	color: rgba(0,0,0,0.5);
+}
+
+.btn-cancel img {
+    width: 100%;
+}
+
+.modal object {
+    width: 60%;
+    height: 75%;
+}
+
+.c-anim {
+    display: none;
+    height: 0px;
+}
+
+.motiv-content {
+	margin-top: 60px;
+}
+.motiv-title {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.motiv-para {
+	margin-bottom: 20px
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --max-width: 420px;
+        --font-title-1: 15px;
+        --font-title-2: 9px;
+        --font-title-3: 7px;
+        --img-width: 10px;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    top: 0;
+    margin: auto;
+    font-family: Arial;
+    width: 840px;
+}
+main {
+    margin: auto; 
+    margin-top: 50px;
+    width: 80%;
+}
+footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.content-info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; 
+}
+.lister li {
+    width: 40%;
+}
+.content-info .left-content {
+    width: 70%;
+}
+.content-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content:space-evenly; 
+}
+.content-list ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.content-list ul li {
+    width: 50%;
+}
+.left-content ul {
+    margin-left: 20px;
+    width: 100%;
+}
+.left-content h2 {
+    font-size: 20px;
+}
+.left-content p {
+    margin-top: 2px;
+}
+.right-content p {
+    margin-top: 2px;
+    text-align: right;
+}
+.hide-text {
+    color: white;
+}
+.resizer {
+    font-size: 20px;
+}
+.more-info {
+    display: flex;
+}
+.btn-more {
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 0;
+}
+.btn-more img {
+    width: 20px;
+}
+.modal {
+    position: fixed;
+    flex-direction: column;
+    top: 30px;
+    bottom: 30px;
+    background-color: rgba(196, 196, 196, 0.651);
+    border-radius: 10px;
+    width: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 0;
+    animation-name: modal-show;
+    animation-duration: 1s;
+}
+@keyframes modal-show {
+    from { width: 0px; }
+    to { width: 840px; }
+}
+.modal .btn-cancel {
+    margin-bottom: 40px;
+    margin-right: 80px;
+    align-self: flex-end;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    border: none;
+}
+.btn-cancel img {
+    width: 100%;
+}
+.modal object {
+    width: 60%;
+    height: 75%;
+}
+.c-anim {
+    display: none;
+    height: 0px;
+}
+
