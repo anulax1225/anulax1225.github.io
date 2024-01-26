@@ -1,12 +1,10 @@
 $(document).ready(() => {
     $(document).on("click", ".btn-cancel", () => {
-        $(".document").children(".modal").remove();
+        $("body").children(".modal").remove();
     });
     $('#now').text(format_DD_MM_YYYY_now());
-    init_btn_modal("#info-cpne", "assets/pdf/Notes_detaillees_de_Vinayak_Ambigapathy.pdf");
+    init_btn_modal("#info-cpne", "assets/pdf/Bulletin_Scolaire_de_Vinayak_Ambigapathy.pdf");
     init_btn_modal("#info-ecole-obligatoire", "assets/pdf/Attestation_au_terme_de_la_scolarité_obligatoire_de_Vinayak_Ambigapathy.pdf");
-    init_btn_modal("#CV", "assets/pdf/CV_Vinayak_Ambigapathy.pdf")
-    init_btn_modal("#references", "assets/pdf/references.pdf");
     init_section_slide_down('#form-acad', 430, 1000);
     init_section_slide_down('#exp-pro', 180, 1000);
     init_section_slide_down("#projet", 280, 1000);
@@ -30,7 +28,7 @@ function format_DD_MM_YYYY_now() {
 
 function init_btn_modal(tag, path) {
     $(tag).on("click", () => {
-        $(".document").prepend(`
+        $("body").prepend(`
         <div class="modal">
             <button class="btn-cancel"><img src="assets/img/cross.png" alt="photo d'une croix"></button>
             <object data="${path}" type="application/pdf">
